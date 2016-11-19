@@ -1,0 +1,12 @@
+// I had to create this file
+
+
+// This line of code renders the form partial into an String of HTML,
+// then encodes that HTML String into a JavaScript String.
+$('.modal-body').html("<%= j render 'form', task: @task %>");
+
+// This line is the jQuery code necessary to launch the Bootstrap popup into the middle of the page.
+$('.modal').modal();
+
+
+// So to summarize, line 1 populates the popup body, and line 2 launches the popup.
